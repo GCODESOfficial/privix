@@ -72,8 +72,8 @@ const Home_hero_mobile = () => {
 				/>
 
 				{/* Bottom left static and animated text */}
-                <div className=" h-28  text-white z-10 absolute bottom-0">
-					<h1 className="text-6xl px-6 md:text-8xl text-center font-semibold tracking-tighter font-[Montserrat-Bold] leading">
+				<div className=" h-28  text-white z-10 absolute bottom-0">
+					<h1 className="text-5xl px-6 md:text-8xl text-center font-semibold tracking-tighter font-[Montserrat-Bold] leading">
 						Own your Digital
 						<br />
 						<span className="block text-[#005EFF]">
@@ -82,25 +82,25 @@ const Home_hero_mobile = () => {
 					</h1>
 				</div>
 			</div>
-			<div className="flex flex-col justify-center items-center py-40">
-				
+			<div className="flex flex-col justify-center items-center py-32">
 				{/* Bottom right text and buttons */}
 				<div className=" text-white z-10 text-center max-w-sm flex flex-col justify-center items-center ">
-					<p className="mb-4 text-lg font-medium px-2 text-center">
+					<p className="mb-4 font-medium px-4 text-center">
 						Privix is an EVM-compatible blockchain designed to prioritise
 						privacy, security, and anonymity within a unified ecosystem.
 					</p>
 
-					<p className="text-lg font-medium px-2 text-center">
+					<p className="font-medium px-4 text-center">
 						Finally, privacy without compromise
 					</p>
-					<div className="flex flex-col gap-4 w-full pt-10 items-center text-sm">
+					<div className="flex flex-col gap-4 w-screen pt-10 items-center justify-center text-sm relative">
 						<a
 							href="https://t.me/privix_eth"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="w-screen flex justify-center"
 						>
-							<div className="bg-gradient-to-b flex justify-center items-center from-[#2950FF] to-[#8AADFF] text-white px-20  py-3 rounded-full font-semibold transition">
+							<div className="bg-gradient-to-b flex justify-center items-center from-[#2950FF] to-[#8AADFF] text-white w-10/12  py-3 rounded-full font-semibold transition">
 								<img
 									src="/images/logo white.svg" // Replace with your image path
 									alt="Overlay"
@@ -116,15 +116,15 @@ const Home_hero_mobile = () => {
 							href="https://privix.gitbook.io/docs"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="w-screen flex justify-center"
 						>
-							<button className="border bg-white text-black px-24  py-3 w-full rounded-full font-semibold hover:bg-gray-200 transition">
+							<button className="border bg-white text-black w-10/12 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
 								Documentation
 							</button>
 						</a>
 					</div>
 				</div>
-
-				</div>
+			</div>
 		</div>
 	);
 };

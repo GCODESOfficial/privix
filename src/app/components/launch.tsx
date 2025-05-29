@@ -45,12 +45,12 @@ const Launch = () => {
 				{videoItems.map((item, index) => (
 					<div
 						key={index}
-						className="md:px-24 px-5 flex flex-col justify-center items-center gap-8 md:pt-[138px] pt-[100px]"
+						className="md:px-24  flex flex-col justify-center items-center gap-8 md:pt-[138px] pt-[90px]"
 					>
 						<h2 className="text-4xl font-[Montserrat-Bold] font-bold text-center">{item.title}</h2>
 						<p className="text-gray-600 text-center md:w-[500px] w-full">{item.description}</p>
 
-						<div className="md:h-[412px] h-[180px] md:w-[770px] w-full p-[4px] rounded-3xl bg-gradient-to-r from-[#0055FE] to-[#6185cd] border-2 border-[#00ADFD]">
+						<div className="md:h-[412px] h-[160px] md:w-[770px] w-full p-[4px] rounded-3xl bg-gradient-to-r from-[#0055FE] to-[#6185cd] border-2 border-[#00ADFD]">
 	<video
 		src={item.video}
 		autoPlay

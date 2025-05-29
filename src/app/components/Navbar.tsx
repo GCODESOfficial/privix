@@ -51,14 +51,15 @@ const navItems: NavItem[] = [
       { text: "Documentation", url: "https://privix.gitbook.io/docs" },
       { text: "Brand Kits", url: "https://www.figma.com/design/nlQ0B49NrysmmZOpqlDoUY/%F0%9F%9F%A6--Privix---Brand-Identity?node-id=0-1&t=6uEoVnEv6Qndzzpn-1" },
       { text: "Github", url: "https://github.com/PrivixAI-labs/Privix-node" },
+      { text: "Pitch deck", url: "/pitchdeck" },
     ],
   },
   {
     label: "Explorer",
     links: [
-      { text: "Mainnet", url: "https://explorer.yourdomain.com" },
-      { text: "Testnet", url: "https://stats.yourdomain.com" },
-      { text: "Privix Faucet", url: "https://stats.yourdomain.com" },
+      { text: "Mainnet", url: "https://privixscan.io/" },
+      { text: "Testnet", url: "https://testnet.privixscan.io/" },
+      { text: "Privix Faucet", url: "https://faucet.privixchain.xyz/" },
     ],
   },
   {
@@ -72,7 +73,7 @@ const navItems: NavItem[] = [
       {
         image: "/telegram navbar.svg",
         alt: "Telegram",
-        url: "https://t.me/privix_eth",
+        url: "https://t.me/Privix_official",
       },
     ],
   },
@@ -102,8 +103,8 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow-sm fixed top-0 z-50">
-      <div className="max-w-7xl mx-auto px-8 md:px-20 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-20 py-4 flex justify-between items-center">
+        <Link href="/" className="flex items-center max-w-20 md:w-auto">
           <img
             src="/images/Logo.svg"
             alt="Overlay"
@@ -181,7 +182,7 @@ const Navbar = () => {
           </ul>
 
           <Link href="https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0xaFB942E2A12aC0861Ad81b5c37682f588912c1d9">
-            <button className="bg-gradient-to-b from-[#2950FF] to-[#8AADFF] transition border-[#C4CBEC] border text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">
+            <button className="bg-gradient-to-b from-[#2950FF] to-[#8AADFF] transition border-[#C4CBEC] border text-white px-4 py-2 rounded-full text-xs md:text-sm font-medium hover:from-[#000C17] hover:to-[#000C17] cursor-pointer ">
               Buy $PRIVIX
             </button>
           </Link>
@@ -208,6 +209,12 @@ const Navbar = () => {
             className="md:hidden bg-white shadow-inner overflow-hidden"
           >
             <ul className="flex flex-col px-9 py-6 space-y-4">
+            <Link href="/">
+            <div className="rounded-lg p-2 bg-gradient-to-t from-[#B0C6F8] to-[#FFFFFF] transition">
+            Home
+            </div>
+                 
+              </Link>
               {navItems.map((nav) => (
                 <li key={nav.label}>
                   <details className="group rounded-lg p-2 bg-gradient-to-t from-[#B0C6F8] to-[#FFFFFF] transition">
@@ -243,7 +250,7 @@ const Navbar = () => {
               ))}
               <li>
                 <Link href="https://app.uniswap.org/#/swap?&chain=mainnet&use=v2&outputCurrency=0xaFB942E2A12aC0861Ad81b5c37682f588912c1d9">
-                  <button className="w-full bg-gradient-to-b from-[#2950FF] to-[#8AADFF] transition border-[#C4CBEC] border text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90">
+                  <button className="w-full bg-gradient-to-b from-[#2950FF] to-[#8AADFF] transition border-[#C4CBEC] border text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-10 ">
                     Buy $PRIVIX
                   </button>
                 </Link>

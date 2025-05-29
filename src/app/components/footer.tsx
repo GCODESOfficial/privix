@@ -36,7 +36,7 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li>
-									<Link href="https://projects.assuredefi.com/project/privix" className="hover:text-white">
+									<Link href="https://projects.assuredefi.com/project/privix" target="_blank" className="hover:text-white">
 										KYC Certificate
 									</Link>
 								</li>
@@ -46,32 +46,32 @@ export default function Footer() {
 							<h3 className="font-bold mb-4 text-[#2957FFCC]">Ecosystem</h3>
 							<ul className="space-y-2  text-sm">
 								<li>
-									<Link href="https://nexar.privix.co/" className="hover:text-white">
+									<Link href="https://nexar.privix.co/" target="_blank" className="hover:text-white">
 										Nexar
 									</Link>
 								</li>
 								<li>
-									<Link href="https://pulsar.privix.co/" className="hover:text-white">
+									<Link href="https://pulsar.privix.co/" target="_blank" className="hover:text-white">
 										Pulsar
 									</Link>
 								</li>
 								<li>
-									<Link href="https://xfera.privix.co/" className="hover:text-white">
+									<Link href="https://xfera.privix.co/" target="_blank" className="hover:text-white">
 										Xfera
 									</Link>
 								</li>
 								<li>
-									<Link href="https://privymail.privix.co/" className="hover:text-white">
+									<Link href="https://privymail.privix.co/" target="_blank" className="hover:text-white">
 										Privymail
 									</Link>
 								</li>
 								<li>
-									<Link href="https://track.privix.co/" className="hover:text-white">
+									<Link href="https://track.privix.co/" target="_blank" className="hover:text-white">
 										Track
 									</Link>
 								</li>
 								<li>
-									<Link href="https://pass.privix.co/" className="hover:text-white">
+									<Link href="https://pass.privix.co/" target="_blank" className="hover:text-white">
 										Pass
 									</Link>
 								</li>
@@ -81,12 +81,12 @@ export default function Footer() {
 							<h3 className="font-bold mb-4 text-[#2957FFCC]">Resources</h3>
 							<ul className="space-y-2 text-sm">
 								<li>
-									<Link href="https://privix.gitbook.io/docs" className="hover:text-white">
+									<Link href="https://privix.gitbook.io/docs" target="_blank" className="hover:text-white">
 										Documentation
 									</Link>
 								</li>
 								<li>
-									<Link href="https://www.figma.com/design/nlQ0B49NrysmmZOpqlDoUY/%F0%9F%9F%A6--Privix---Brand-Identity?node-id=0-1&t=6uEoVnEv6Qndzzpn-1" className="hover:text-white">
+									<Link href="https://www.figma.com/design/nlQ0B49NrysmmZOpqlDoUY/%F0%9F%9F%A6--Privix---Brand-Identity?node-id=0-1&t=6uEoVnEv6Qndzzpn-1" target="_blank" className="hover:text-white">
 										Brand Kits
 									</Link>
 								</li>
@@ -95,24 +95,28 @@ export default function Footer() {
 										Github
 									</Link>
 								</li>
-								<li></li>
+								<li>
+									<Link href="/pitchdeck" className="hover:text-white">
+									Pitch deck
+									</Link>
+								</li>
 							</ul>
 						</div>
 						<div>
 							<h3 className="font-bold mb-4 text-[#2957FFCC]">Explorer</h3>
 							<ul className="space-y-2 text-sm">
 								<li>
-									<Link href="#" className="hover:text-white">
+									<Link href="https://privixscan.io/" target="_blank" className="hover:text-white">
 										Mainnet
 									</Link>
 								</li>
 								<li>
-									<Link href="#" className="hover:text-white">
+									<Link href="https://testnet.privixscan.io/" target="_blank" className="hover:text-white">
 										Testnet
 									</Link>
 								</li>
 								<li>
-									<Link href="#" className="hover:text-white">
+									<Link href="https://faucet.privixchain.xyz/" target="_blank" className="hover:text-white">
 										Privix Faucet
 									</Link>
 								</li>
@@ -124,7 +128,7 @@ export default function Footer() {
 						<h3 className="font-bold mb-4 text-[#2957FFCC]">Socials</h3>
 						<ul className="space-y-2 text-sm flex space-x-2">
 							<li>
-								<Link href="https://x.com/privixtoken" className="hover:text-white">
+								<Link href="https://x.com/privixtoken" target="_blank" className="hover:text-white">
 									<img
 										src="/images/X footer.svg"
 										alt="full coin"
@@ -133,7 +137,7 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link href="https://t.me/privix_eth" className="hover:text-white">
+								<Link href="https://t.me/Privix_official" target="_blank" className="hover:text-white">
 									<img
 										src="/images/telegram white.svg"
 										alt="full coin"
@@ -154,7 +158,7 @@ export default function Footer() {
 						© {new Date().getFullYear()} Privix. All rights reserved.
 					</p>
 					
-					<a href="mailto:team@privix.co">
+					<a href="mailto:team@privix.co" target="_blank">
 					<div className="flex mt-10 md:mt-0 cursor-pointer">
 						<img src="/images/message.svg" alt="full coin" className="mr-1" />
 						<p>team@privix.co</p>

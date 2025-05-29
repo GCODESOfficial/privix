@@ -19,10 +19,10 @@ const Home = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-      <div className="w-full h-14 bg-[#2950FF] text-[#2950FF] border-[#2950FF14] space-x-4 flex justify-center items-center">
-          <button className="bg-white font-bold rounded-full px-4 py-1 md:text-base text-sm">Latest Update</button>
+      <div className="w-full h-16 bg-[#2950FF] text-[#2950FF] border-[#2950FF14] space-x-4 flex justify-center items-center">
+          <button className="bg-white font-bold rounded-full px-4 py-2 text-xs md:text-base">Latest Update</button>
           
-          <p className="text-white font-bold flex items-center text-sm md:text-base">Nexar live on Telegram! 🔗 <span className="text-4xl font-light text-white">→</span></p>
+          <p className="text-white font-bold flex items-center text-xs md:text-base">Nexar live on Telegram! 🔗 <span className="text-4xl font-light text-white">→</span></p>
           
       </div>
       </a>

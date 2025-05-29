@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
+import LayoutWrapper from "./components/layoutwrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,16 +31,17 @@ export const metadata: Metadata = {
     title: "Privix — Private & Secure EVM Blockchain",
     description:
       "Privix is an EVM-compatible blockchain designed to prioritise privacy, security, and anonymity within a unified ecosystem. Explore a new era of secure decentralized finance.",
-    url: "https://privix.co",
+    
+      images: [
+        {
+          url: "/images/Metadata.png",
+          width: 1200,
+          height: 630,
+          alt: "Privix Blockchain Overview",
+        },
+      ],
+      url: "https://privix.co",
     siteName: "Privix",
-    images: [
-      {
-        url: "/images/Metadata.png",
-        width: 1200,
-        height: 630,
-        alt: "Privix Blockchain Overview",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description:
       "Privix is an EVM-compatible blockchain designed to prioritise privacy, security, and anonymity within a unified ecosystem.",
     images: ["/images/Metadata.png"],
-    creator: "@cdsspace", // optional
+    creator: "@cdsspace_", // optional
   },
   category: "technology",
   robots: {
@@ -78,9 +78,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

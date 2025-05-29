@@ -16,19 +16,19 @@ const Join = () => {
 
 			<div className="z-40 flex flex-col justify-center items-center">
 				<div className="md:leading-20 mb-14">
-					<h1 className="md:text-[80px] text-[40px] font-[Montserrat-Bold] font-bold text-center">
+					<h1 className="md:text-[80px] text-[35px] font-[Montserrat-Bold] font-bold text-center">
 						Join the Global
 					</h1>
-					<h1 className="md:text-[80px] text-[40px] font-bold font-[Montserrat-Bold] text-center">
+					<h1 className="md:text-[80px] text-[35px] font-bold font-[Montserrat-Bold] text-center">
 						Privix <span className="text-[#005EFF] ">Community</span>
 					</h1>
 				</div>
 
-				<p className="w-8/12 text-center mb-[25px] font-medium">
+				<p className="md:w-8/12 w-10/12 text-center mb-[25px] font-medium">
 				Privix is powered by a global community united by the pursuit of privacy and decentralization. 
 				Join us in shaping the future of secure, private transactions..
 				</p>
-				<p className="w-8/12 text-center mb-[25px] font-bold">
+				<p className="w-11/12 text-center mb-[25px] font-bold">
 				Connect, collaborate, and experience  privacy with Privix.
 				</p>
 
@@ -38,7 +38,7 @@ const Join = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-					<img src="/images/X.svg" alt="full coin" className="" />
+					<img src="/images/X.svg" alt="full coin" className="w-8 md:w-auto" />
 					</a>
 
 					<a
@@ -46,7 +46,7 @@ const Join = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-					<img src="/images/telegram.svg" alt="full coin" className="" />
+					<img src="/images/telegram.svg" alt="full coin" className="w-8 md:w-auto" />
 					</a>
 				</div>
 			</div>

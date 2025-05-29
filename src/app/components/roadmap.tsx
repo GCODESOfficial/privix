@@ -7,7 +7,7 @@ const Roadmap = () => {
 				</h1>
 
                 <img src="/images/roadmap.svg" alt="full coin" className="mt-20 md:block hidden" />
-                <img src="/Mobile Roadmap.svg" alt="full coin" className="mt-28 md:hidden scale-125" />
+                <img src="/Mobile Roadmap.svg" alt="full coin" className="mt-32 md:hidden scale-150" />
     </div>
   )
 }
